@@ -1,0 +1,151 @@
+/* 
+Google Fonts Used -
+font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif; 
+*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* base font is roboto */
+  font-size: 16px;
+  line-height: 1.414;
+  text-align: center;
+  color: #535353;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #4484ce;
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+.max-width-container {
+  max-width: 765px;
+  margin: 0 auto;
+}
+
+/* Headings Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  /* heading font is poppins */
+  font-weight: bold;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.414em;
+}
+
+/* End Headings Styles */
+
+/* top bar Styles */
+.top-bar {
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.68px;
+  padding: 20px 15px;
+}
+
+/* End Main Nav Styles */
+
+/* Header Styles */
+header {
+  padding: 42px 10px;
+}
+
+header .callout {
+  font-size: 1em;
+  margin-top: 15px;
+  color: grey;
+}
+
+/* End Header Styles */
+
+/* Section Styles */
+section {
+  padding: 42px 10px;
+  text-align: left;
+  background-color: #0f0c29;
+  color: #fff;
+}
+
+section fieldset {
+  border: none;
+}
+
+section legend {
+  font-weight: bold;
+  font-size: 1.414em;
+  margin-bottom: 1.414em;
+}
+
+section .flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-bottom: 1em;
+}
+
+section .flex-container label {
+  margin-bottom: .68em;
+}
+
+section .flex-container input {
+  color: #ffffff;
+  margin-bottom: .68em;
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, .2);
+  text-align: right;
+}
+
+/* End Section Styles */
+
+/* Footer Styles */
+footer {
+  background-color: #D4F1FC;
+  color: #436C7D;
+  padding: 42px;
+}
+/* End Footer Styles */
+
+/* If screen size is more than 768px wide */
+@media screen and (min-width: 768px) {
+
+}
