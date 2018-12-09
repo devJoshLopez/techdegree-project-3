@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <![endif]-->
   <title>Josh's Online Registration Form</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -25,40 +25,40 @@
       <p class="callout">Get the latest news on how your code is doimg right in your inbox</p>
     </header>
 
-    <section>
+    <div class="section">
       <form action="/action_page.php" method="get">
         <fieldset>
           <legend>Contact Information</legend>
 
           <div class="flex-container">
-            <label for="full-name">Full Name</label>
+            <label for="full-name">Full Name <i class="fas fa-asterisk required"></i></label>
             <input type="text" name="full-name" id="full-name" placeholder="required" required>
           </div>
 
           <div class="flex-container">
-            <label for="email">Email Address</label>
+            <label for="email">Email Address <i class="fas fa-asterisk required"></i></label>
             <input type="email" name="email" id="email" placeholder="required" required>
           </div>
 
           <div class="flex-container">
             <label for="phone">Phone Number</label>
-            <input type="tel" name="phone" id="phone">
+            <input type="tel" name="phone" id="phone" placeholder="(555) 555-5555">
           </div>
 
           <div class="flex-container">
             <label for="street">Street Address</label>
-            <input type="text" name="street" id="street">
+            <input type="text" name="street" id="street" placeholder="3514 N Vancouver Ave Suite 500">
           </div>
 
           <div class="flex-container">
             <label for="city">City</label>
-            <input type="text" name="city" id="city">
+            <input type="text" name="city" id="city" placeholder="Portland">
           </div>
 
           <div class="flex-container">
             <label for="state">State</label>
             <select id="state" name="state">
-              <option value="---">Choose State</option>
+              <option value="---">Choose a State</option>
               <option value="Alabama">Alabama</option>
               <option value="Alaska">Alaska</option>
               <option value="Arizona">Arizona</option>
@@ -115,10 +115,11 @@
               <option value="Wisconsin">Wisconsin</option>
               <option value="Wyoming">Wyoming</option>
             </select>
+        </div>
 
             <div class="flex-container">
               <label for="zipcode">Zip Code</label>
-              <input type="text" name="zipcode" id="zipcode">
+              <input type="text" name="zipcode" id="zipcode" placeholder="97227">
             </div>
         </fieldset>
 
@@ -127,31 +128,49 @@
         <fieldset>
           <legend>Newsletter</legend>
 
-          <div class="flex-container">
+          <div class="checkbox-container">
             <label>Select the newsletters you would like to recieve</label>
-            <input type="checkbox" id="htmlnews" value="HTML News" name="selected_news"><label for="htmlnews">HTML
-              News</label><br>
-            <input type="checkbox" id="cssnews" value="CSS News" name="selected_news"><label for="cssnews">CSS
-              News</label><br>
-            <input type="checkbox" id="jsnews" value="Javascript News" name="selected_news"><label for="jsnews">Javascript
-              News</label>
+
+            <div class="checkbox-item">
+              <input type="checkbox" id="htmlnews" value="HTML News" name="selected_news" checked>
+              <label class="checkbox-label" for="htmlnews">HTML News</label>
+            </div>
+
+            <div class="checkbox-item">
+              <input type="checkbox" id="cssnews" value="CSS News" name="selected_news">
+              <label class="checkbox-label" for="cssnews">CSS News</label>
+            </div>
+
+            <div class="checkbox-item">
+              <input type="checkbox" id="jsnews" value="Javascript News" name="selected_news">
+              <label class="checkbox-label" for="jsnews">Javascript News</label>
+            </div>
+
           </div>
 
-          <div class="flex-container">
+          <div class="radio-container">
             <label>Newsletter format</label>
-            <input type="radio" id="htmlformat" value="HTML" name="selected_format"><label for="htmlformat">HTML</label><br>
-            <input type="radio" id="plaintextformat" value="Plain text" name="selected_format"><label for="plaintextformat">Plain
-              text</label>
+
+            <div class="radio-item">
+              <input type="radio" id="htmlformat" value="HTML" name="selected_format" checked>
+              <label class="radio-label" for="htmlformat">HTML</label>
+            </div>
+
+            <div class="radio-item">
+              <input type="radio" id="plaintextformat" value="Plain text" name="selected_format">
+              <label class="radio-label" for="plaintextformat">Plain text</label>
+            </div>
           </div>
 
-          <div class="flex-container">
             <label for="othertopics">Other topics you'd like to hear about</label>
-            <textarea name="other_topics" id="othertopics"></textarea>
-          </div>
+            <textarea name="other_topics" id="othertopics" cols="30" rows="10"></textarea>
+
         </fieldset>
 
+        <button type="submit">Sign Up</button>
+
       </form>
-    </section>
+    </div>
 
     <footer>
       <p>Copyright The Code Review</p>
@@ -159,4 +178,5 @@
 
   </div>
 </body>
+
 </html>
